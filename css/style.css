@@ -40,7 +40,7 @@ html, body {
 
 section.main {
     position: relative;
-    background-image: url(/imagens/bg1.jpg);
+    background-image: url(imagens/bg1.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -202,7 +202,7 @@ nav.desktop a {
 
 .paralax {
     margin-top: 40px;
-    background-image: url(/imagens/paralax.jpg);
+    background-image: url(imagens/paralax.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
