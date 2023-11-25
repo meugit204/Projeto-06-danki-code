@@ -40,7 +40,7 @@ html, body {
 
 section.main {
     position: relative;
-    background-image: url(/imagens/bg1.jpg);
+    background-image: url(imagens/bg1.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -208,56 +208,4 @@ nav.desktop a {
     .box__planos {
         width: 100%;
     }
-}
-
-
-.paralax {
-    margin-top: 40px;
-    background-image: url(/imagens/paralax.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 2;
-}
-
-.cor__fundo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: #333333a3;
-}
-
-.paralax>.center {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-    max-width: 960px;
-}
-
-.paralax__title h2 {
-    font-size: 30px;
-    font-weight: lighter;
-    color: #fff;
-    padding: 30px 0;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.paralax__title span {
-    color: #2692ff;
-}
-
-.box__sobre {
-    margin: 10px auto;
-}
-
-.box__sobre p {
-    color: #fff;
-    padding: 8px 2%;
-    font-size: 16px;
-    z-index: 22;
 }
