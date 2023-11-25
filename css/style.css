@@ -40,7 +40,7 @@ html, body {
 
 section.main {
     position: relative;
-    background-image: url(imagens/bg1.jpg);
+    background-image: url(/imagens/bg1.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -202,7 +202,7 @@ nav.desktop a {
 
 .paralax {
     margin-top: 40px;
-    background-image: url(imagens/paralax.jpg);
+    background-image: url(/imagens/paralax.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -216,7 +216,7 @@ nav.desktop a {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: #333333a3;
+    background-color: #333333b5;
 }
 
 .paralax>.center {
@@ -251,6 +251,124 @@ nav.desktop a {
     z-index: 22;
 }
 
+.contato>.center {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+.border__contato {
+    width: 100px;
+    height: 5px;
+    position: absolute;
+}
+
+.form__title {
+    position: relative;
+}
+
+.form__title h2, .time h2 {
+    font-size: 27px;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+form input {
+    width: 100%;
+    height: 2rem;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+form textarea {
+    width: 100%;
+    padding: 4px;
+    resize: vertical;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #2692ff;
+    border: 0;
+    border-radius: 30px;
+    width: 120px;
+    height: 33px;
+    color: #fff;
+    margin-top: 15px;
+
+}
+
+.contato {
+    margin-top: 40px;
+}
+
+.container__time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.card__time {
+    box-shadow: 3px 3px 3px #ccc;
+    border: 1px solid #ccc;
+    width: 45%;
+    margin-bottom: 10px;
+
+    padding: 10px 2%;
+}
+
+.card__title {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.card__tl {
+    padding-left: 10px;
+}
+
+.card__tl>p:first-child {
+    font-weight: bold;
+    color: #000;
+}
+
+.card__tl>p:last-child {
+    font-weight: lighter;
+    color: #ccc;
+}
+
+.img__time {
+    width: 60px;
+    border-radius: 50%;
+    background-color: #ccc;
+    height: 60px;
+}
+
+.time__sobre {
+    margin-top: 10px;
+}
+
+.time__sobre p {
+    color: #ccc;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width:988px) {
+    .container__time {
+        gap: 1%;
+    }
+
+    .card__time {
+        width: 48%;
+    }
+
+}
+
 @media screen and (max-width:750px) {
     .container__planos>.center {
         flex-direction: column;
@@ -258,5 +376,34 @@ nav.desktop a {
 
     .box__planos {
         width: 100%;
+    }
+
+    .contato>.center {
+        flex-direction: column;
+    }
+
+    .w50 {
+        width: 100%;
+    }
+}
+
+@media screen and(max-width:780px) {
+    .contato>.center {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:495px) {
+    .container__time {
+        flex-direction: column;
+    }
+
+    .time {
+        margin-top: 30px;
+    }
+
+    .card__time {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
