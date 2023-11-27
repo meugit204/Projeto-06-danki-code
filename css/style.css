@@ -40,7 +40,7 @@ html, body {
 
 section.main {
     position: relative;
-    background-image: url(imagens/bg1.jpg);
+    background-image: url(../imagens/bg1.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -77,6 +77,16 @@ section.main header {
     font-weight: bold;
 }
 
+/* Menu Mobile da pagina */
+nav.mobile {
+    display: none;
+}
+
+nav.mobile ul {
+    display: none;
+}
+
+/* ----------------- */
 nav.desktop {
     float: right;
     margin-top: 20px;
@@ -202,7 +212,7 @@ nav.desktop a {
 
 .paralax {
     margin-top: 40px;
-    background-image: url(imagens/paralax.jpg);
+    background-image: url(../imagens/paralax.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -377,8 +387,57 @@ form button {
     font-size: 16px;
 }
 
+footer {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px 2%;
+    color: #fff;
+    background-color: #444;
+    text-align: center;
+}
 
 @media screen and (max-width:780px) {
+
+    /* Menu Mobile da pagina */
+    nav.mobile {
+        display: block;
+        float: right;
+    }
+
+    nav.mobile ul {
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 999999;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.mobile ul li {
+        padding: 10px 2%;
+    }
+
+    nav.mobile a {
+        color: #000;
+
+    }
+
+    nav.mobile i {
+        font-size: 27px;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        top: 6px;
+        right: 13px;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
+    /* ----------------- */
     .container__planos>.center {
         flex-direction: column;
     }
