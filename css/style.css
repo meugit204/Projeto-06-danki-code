@@ -252,15 +252,36 @@ nav.desktop a {
 }
 
 .contato>.center {
-    display: flex;
-    justify-content: space-between;
-    gap: 4%;
+    width: 100%;
+
 }
 
-.border__contato {
-    width: 100px;
-    height: 5px;
+.form {
+    float: left;
+}
+
+.form__title h2>.border__contato {
+    width: 50px;
+    height: 2px;
     position: absolute;
+    background: #ccc;
+}
+
+.form__title h2:hover>.border__contato {
+    width: 100px;
+    transition: 1s;
+}
+
+.center>.time h2>.border__contato {
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    background: #ccc;
+}
+
+.center>.time h2:hover>.border__contato {
+    width: 100px;
+    transition: 1s;
 }
 
 .form__title {
@@ -271,6 +292,7 @@ nav.desktop a {
     font-size: 27px;
     color: #ccc;
     padding: 10px 0;
+    position: relative;
 }
 
 form input {
@@ -296,6 +318,7 @@ form button {
     height: 33px;
     color: #fff;
     margin-top: 15px;
+    cursor: pointer;
 
 }
 
@@ -304,20 +327,17 @@ form button {
 }
 
 .container__time {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+    float: left;
 }
 
 .card__time {
     box-shadow: 3px 3px 3px #ccc;
     border: 1px solid #ccc;
-    width: 45%;
-    margin-bottom: 10px;
-
+    width: 48%;
+    float: left;
     padding: 10px 2%;
+    margin: 0 1%;
+
 }
 
 .card__title {
@@ -342,10 +362,10 @@ form button {
 }
 
 .img__time {
-    width: 60px;
+    width: 50px;
     border-radius: 50%;
     background-color: #ccc;
-    height: 60px;
+    height: 50px;
 }
 
 .time__sobre {
@@ -358,18 +378,7 @@ form button {
 }
 
 
-@media screen and (max-width:988px) {
-    .container__time {
-        gap: 1%;
-    }
-
-    .card__time {
-        width: 48%;
-    }
-
-}
-
-@media screen and (max-width:750px) {
+@media screen and (max-width:780px) {
     .container__planos>.center {
         flex-direction: column;
     }
@@ -378,32 +387,19 @@ form button {
         width: 100%;
     }
 
-    .contato>.center {
-        flex-direction: column;
-    }
-
     .w50 {
         width: 100%;
     }
-}
 
-@media screen and(max-width:780px) {
-    .contato>.center {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width:495px) {
     .container__time {
-        flex-direction: column;
-    }
-
-    .time {
         margin-top: 30px;
     }
+}
 
+@media screen and (max-width:450px) {
     .card__time {
         width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 2%;
+
     }
 }
